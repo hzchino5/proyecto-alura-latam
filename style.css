@@ -1,0 +1,106 @@
+:root{
+    --color-primario:#0a3871;
+    --color-secundario:#F3F5FC;
+    --color-terciario:white;
+    --color-informacion:#495057;
+}
+*{
+    background-color:var(--color-secundario);
+    font-family: 'Inter';
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 8%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area{
+    border:none;
+    color: var(--color-primario);
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+::placeholder {color: var(--color-primario);}
+  .text-area:focus {
+    outline: none;
+}
+.mensaje{
+    background: var(--color-terciario);
+    background-image: url("imagenes/Muneco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: var(--color-primario);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    
+}
+.mensaje:focus{
+    outline: none;
+}
+.botones{
+    display: flex;
+    margin-top: 18px;
+    
+}
+.btn-encriptar{
+background-color: var(--color-primario);
+border: 1px solid var(--color-primario);
+border-radius: 24px;
+color: var(--color-terciario);
+cursor: pointer;
+height: 67px;
+width: 328px;
+}
+.btn-desencriptar{
+    background: var(--color-secundario);
+    border: 1px solid var(--color-primario);
+    border-radius: 24px;
+    color: var(--color-primario);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+.copiar{
+    border: 1px solid var(--color-primario);
+    border-radius: 24px;
+    color: var(--color-primario);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position:absolute;
+    width: 336px;
+}
+.informacion{
+    color: var(--color-informacion);
+    font-size: 18px;
+}
+.footer{
+    padding: 24px;
+    background-color:var(--color-terciario);     
+    color: var(--color-primario);
+    text-align: left;
+    font-size: 10px;
+    font-weight: 400;
+}
+@media (max-width: 1200px){
+    .cuerpoDeTexto{
+        flex-direction: column;
+    }
+    .cuerpoMensaje{
+        flex-direction: column;
+    }
+}
